@@ -18,11 +18,14 @@ const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 
 const lines = [
-  "Software Development",
-  "Flutter Mobile Applications",
-  "Cloud Computing with AWS",
-  "Problem Solving and Continuous Learning",
+  "Flutter Mobile Development",
+  "Full Stack Web Applications",
+  "AWS Cloud Deployment",
+  "Machine Learning Solutions",
 ];
+
+const navbar = document.getElementById("navbar");
+const scrollTopBtn = document.getElementById("scrollTop");
 
 let lineIndex = 0;
 let charIndex = 0;
@@ -289,8 +292,27 @@ if (galleryImage) {
 }
 
 function initImageFallbacks() {
-  document.querySelectorAll(".carousel-slide, .showcase-card-preview, img[data-fallback]").forEach((image) => {
+  document.querySelectorAll(".carousel-slide, .project-media img, img[data-fallback]").forEach((image) => {
     image.addEventListener("error", () => handleImageError(image));
+  });
+}
+
+function initNavbar() {
+  const onScroll = () => {
+    if (navbar) {
+      navbar.classList.toggle("scrolled", window.scrollY > 24);
+    }
+    if (scrollTopBtn) {
+      scrollTopBtn.hidden = window.scrollY < 400;
+    }
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+}
+
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
 
@@ -364,53 +386,24 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-const sidebar = document.getElementById("sidebar");
-const sidebarOverlay = document.getElementById("sidebarOverlay");
-
-function closeSidebarMenu() {
-  sidebar?.classList.remove("open");
-  if (sidebarOverlay) {
-    sidebarOverlay.hidden = true;
-  }
-  if (menuToggle) {
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.textContent = "☰";
-  }
-}
-
-function openSidebarMenu() {
-  sidebar?.classList.add("open");
-  if (sidebarOverlay) {
-    sidebarOverlay.hidden = false;
-  }
-  if (menuToggle) {
-    menuToggle.setAttribute("aria-expanded", "true");
-    menuToggle.textContent = "✕";
-  }
-}
-
-if (menuToggle && sidebar) {
+if (menuToggle && navMenu) {
   menuToggle.addEventListener("click", () => {
-    if (sidebar.classList.contains("open")) {
-      closeSidebarMenu();
-    } else {
-      openSidebarMenu();
-    }
+    const isOpen = navMenu.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.textContent = isOpen ? "✕" : "☰";
   });
-}
 
-if (sidebarOverlay) {
-  sidebarOverlay.addEventListener("click", closeSidebarMenu);
-}
-
-if (navMenu) {
   navMenu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", closeSidebarMenu);
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰";
+    });
   });
 }
 
+initNavbar();
 initRevealAnimations();
 initImageFallbacks();
-initFeaturedCarousels();
 initSkillBars();
 typeAnimation();
