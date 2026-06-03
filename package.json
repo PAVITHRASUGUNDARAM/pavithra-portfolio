@@ -1,0 +1,9 @@
+{
+  "name": "pavithra-sugundaram-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static developer portfolio for Pavithra Sugundaram",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}

@@ -14,15 +14,17 @@ Your correct code is on GitHub: **https://github.com/PAVITHRASUGUNDARAM/pavithra
 3. Click **Add New → Project**.
 4. Import **`PAVITHRASUGUNDARAM/pavithra-portfolio`** only.
 5. **Project name:** use something unique, e.g. `pavithra-sugundaram-portfolio` (avoid `pavithra-portfolio` — that name is taken globally).
-6. Settings:
+6. Settings (must match `vercel.json` in the repo):
 
    | Field | Value |
    |-------|--------|
    | Framework Preset | **Other** |
-   | Root Directory | `.` |
-   | Build Command | *(empty)* |
-   | Output Directory | *(empty)* |
-   | Install Command | *(empty)* |
+   | Root Directory | `.` (empty) |
+   | Build Command | `npm run build` |
+   | Output Directory | `dist` |
+   | Install Command | *(default / empty)* |
+
+   If Vercel shows **Override** toggles, turn them **on** only if values differ — otherwise leave overrides off so `vercel.json` applies.
 
 7. Click **Deploy**.
 8. When done, open the new `*.vercel.app` URL. You should see:
@@ -34,8 +36,12 @@ Your correct code is on GitHub: **https://github.com/PAVITHRASUGUNDARAM/pavithra
 
 In Vercel → Project → **Settings → General**:
 
-- Root Directory must be **empty** or `.` (not `public`, not `src`).
-- Redeploy: **Deployments → … → Redeploy**.
+- Root Directory must be **empty** or `.` (not `public`, not `src`, not your Windows user folder).
+- **Output Directory** must be `dist` (the build copies `index.html` there).
+- **Build Command** must be `npm run build`.
+- Redeploy: **Deployments → … → Redeploy** (use latest commit from GitHub).
+
+Check the build log: you should see `Copied index.html` and `Build complete → dist/`.
 
 ## After it works
 
