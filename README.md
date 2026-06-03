@@ -66,6 +66,9 @@ Open in browser: **http://127.0.0.1:5500** (not `http://[::]:5500/`).
 3. **Add New Project** → import `PAVITHRASUGUNDARAM/pavithra-portfolio`.
 4. Framework preset: **Other** (static site, no build step).
 5. Root directory: `.` — leave build command empty, output directory empty.
-6. Deploy. Your live URL will look like `https://pavithra-portfolio.vercel.app`.
+6. **Project name:** use `pavithra-sugundaram-portfolio` (do not use `pavithra-portfolio` — that subdomain may belong to someone else).
+7. Deploy. Your live URL will look like `https://pavithra-sugundaram-portfolio.vercel.app`.
+
+If you see the wrong site or a 404, read [DEPLOY-VERCEL.md](DEPLOY-VERCEL.md).
 
 `vercel.json` is already configured for static hosting and security headers.
