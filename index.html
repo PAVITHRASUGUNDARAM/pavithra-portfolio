@@ -20,404 +20,413 @@
   />
   <meta property="og:type" content="website" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="theme-color" content="#ff6b6b" />
   <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home" aria-label="Pavithra Sugundaram home">
-      <img src="assets/logo.jpeg" alt="Pavithra Sugundaram logo" class="brand-logo" />
-      <span class="brand-name">Pavithra Sugundaram</span>
-    </a>
-    <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
-    <nav class="navlinks" id="navMenu">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#career-goal">Career Goals</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">✦</button>
-  </header>
+  <div class="page-wrap">
+    <aside class="sidebar" id="sidebar" aria-label="Profile and navigation">
+      <div class="sidebar-blob sidebar-blob--1" aria-hidden="true"></div>
+      <div class="sidebar-blob sidebar-blob--2" aria-hidden="true"></div>
+      <div class="sidebar-inner">
+        <img
+          class="sidebar-photo"
+          src="assets/photos/pavithra-profile.jpeg"
+          alt="Professional photo of Pavithra Sugundaram"
+          width="200"
+          height="200"
+        />
+        <h1 class="sidebar-name">Pavithra Sugundaram</h1>
+        <p class="sidebar-role">Flutter Developer • Software Developer</p>
+        <p class="sidebar-tag">AWS Cloud Enthusiast</p>
 
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-content glass hero-animate">
-        <p class="hero-role">Flutter Developer • Software Developer • AWS Cloud Enthusiast</p>
-        <h1 class="hero-name">
-          Hi, I'm Pavithra <span class="wave">👋</span>
-        </h1>
-        <p class="hero-tagline">
-          Flutter Developer building mobile apps and cloud-powered solutions.
-        </p>
-        <p class="animated-text" aria-live="polite"></p>
-        <div class="hero-about">
-          <p>
-            Information Technology graduate passionate about Flutter development, cloud computing, and software
-            engineering.
-          </p>
-          <p>
-            I build responsive mobile applications, integrate cloud services, and create scalable solutions focused
-            on user experience.
-          </p>
-        </div>
-        <div class="hero-actions">
-          <a class="btn btn-primary" data-resume-link href="assets/Pavithra-Sugundaram-Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
-          <a class="btn btn-secondary" href="#contact">Get In Touch</a>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/PAVITHRASUGUNDARAM" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/pavithra-sugundaram/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-      </div>
-
-      <aside class="profile-card glass hero-animate profile-animate-delay" aria-label="Profile">
-        <div class="profile-card-glow"></div>
-        <div class="profile-card-inner">
-          <img
-            class="profile-photo"
-            src="assets/photos/pavithra-profile.jpeg"
-            alt="Professional photo of Pavithra Sugundaram"
-            width="320"
-            height="320"
-          />
-          <p class="profile-card-name">Pavithra Sugundaram</p>
-          <p class="profile-card-role">Flutter &amp; Software Developer</p>
-        </div>
-      </aside>
-    </section>
-
-    <section id="about" class="section reveal">
-      <h2>About Me</h2>
-      <div class="grid two">
-        <article class="card glass">
-          <h3>Professional Summary</h3>
-          <p>
-            Aspiring Software Developer with internship experience in networking and AWS cloud computing, plus hands-on
-            work in Flutter, Java, Python, Firebase, REST APIs, and modern software development practices.
-          </p>
-        </article>
-        <article class="card glass">
-          <h3>Core Focus</h3>
-          <ul>
-            <li>Software Development</li>
-            <li>Mobile Application Development</li>
-            <li>Cloud Computing</li>
-            <li>Problem Solving</li>
-            <li>Continuous Learning</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="section reveal">
-      <h2>Experience</h2>
-      <p class="section-intro">
-        Industry exposure that complements my academic projects and cloud certifications.
-      </p>
-      <article class="card glass experience-card">
-        <div class="experience-header">
-          <div>
-            <h3>Networking &amp; Cloud Computing Intern</h3>
-            <p class="experience-org">Sharadha Academy</p>
-          </div>
-          <span class="experience-date">July 2025</span>
-        </div>
-        <ul class="experience-list">
-          <li>Worked on networking concepts including IP addressing, VLANs, routing, TCP/IP, and DNS fundamentals.</li>
-          <li>Deployed and managed scalable cloud infrastructure using AWS services.</li>
-          <li>Applied monitoring practices and cloud security best practices in real-world scenarios.</li>
+        <ul class="sidebar-contact">
+          <li><a href="mailto:pavisugu1926@gmail.com">pavisugu1926@gmail.com</a></li>
+          <li><a href="tel:+919677671926">+91 96776 71926</a></li>
+          <li><a href="https://www.linkedin.com/in/pavithra-sugundaram/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/PAVITHRASUGUNDARAM" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
-        <div class="tech-badges">
-          <span>AWS</span><span>Cloud Computing</span><span>Networking</span><span>Security</span>
-        </div>
-      </article>
-    </section>
 
-    <section id="skills" class="section reveal">
-      <h2>Technical Skills</h2>
-      <div class="grid three">
-        <article class="card glass">
-          <h3>Programming Languages</h3>
-          <ul><li>Java</li><li>Python</li><li>Dart</li><li>SQL</li></ul>
-        </article>
-        <article class="card glass">
-          <h3>Mobile Development</h3>
-          <ul><li>Flutter</li><li>Firebase</li><li>REST APIs</li><li>State Management</li></ul>
-        </article>
-        <article class="card glass">
-          <h3>Software Development</h3>
-          <ul>
-            <li>OOP</li>
-            <li>Data Structures</li>
-            <li>Algorithms</li>
-            <li>Problem Solving</li>
-            <li>Git &amp; GitHub</li>
-          </ul>
-        </article>
-        <article class="card glass">
-          <h3>Cloud &amp; DevOps</h3>
-          <ul><li>AWS</li><li>Terraform</li><li>Cloud Fundamentals</li><li>Infrastructure as Code</li></ul>
-        </article>
-        <article class="card glass">
-          <h3>Databases</h3>
-          <ul><li>MySQL</li><li>Firebase Firestore</li></ul>
-        </article>
+        <nav class="sidebar-nav" id="navMenu" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary btn-block" data-resume-link href="assets/Pavithra-Sugundaram-Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
       </div>
-    </section>
+    </aside>
 
-    <section id="projects" class="section reveal project-showcase">
-      <div class="showcase-header">
-        <p class="showcase-eyebrow">Selected Work</p>
-        <h2>Project Showcase</h2>
-        <p class="section-intro">
-          Production-style projects across mobile development, cloud engineering, and full-stack web —
-          built with modern tools and recruiter-ready presentation.
-        </p>
-      </div>
+    <div class="main-panel">
+      <header class="mobile-bar">
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <span class="mobile-brand">Pavithra Sugundaram</span>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">🌙</button>
+      </header>
 
-      <article class="featured-project glass">
-        <div class="featured-visual">
-          <div class="phone-mockup">
-            <div class="phone-notch"></div>
-            <div class="carousel" data-carousel="diabetes" data-interval="3200">
-              <img class="carousel-slide active" src="public/projects/diabetes/screen1.jpeg" alt="Diabetes app screen 1" />
-              <img class="carousel-slide" src="public/projects/diabetes/screen2.jpeg" alt="Diabetes app screen 2" />
-              <img class="carousel-slide" src="public/projects/diabetes/screen3.jpeg" alt="Diabetes app screen 3" />
-              <img class="carousel-slide" src="public/projects/diabetes/screen4.jpeg" alt="Diabetes app screen 4" />
-              <img class="carousel-slide" src="public/projects/diabetes/screen5.jpeg" alt="Diabetes app screen 5" />
-              <img class="carousel-slide" src="public/projects/diabetes/screen6.jpeg" alt="Diabetes app screen 6" />
-              <img class="carousel-slide" src="public/projects/diabetes/screen7.jpeg" alt="Diabetes app screen 7" />
-            </div>
-          </div>
-          <div class="carousel-dots" data-carousel-dots="diabetes">
-            <button type="button" class="carousel-dot active" aria-label="Slide 1"></button>
-            <button type="button" class="carousel-dot" aria-label="Slide 2"></button>
-            <button type="button" class="carousel-dot" aria-label="Slide 3"></button>
-            <button type="button" class="carousel-dot" aria-label="Slide 4"></button>
-            <button type="button" class="carousel-dot" aria-label="Slide 5"></button>
-            <button type="button" class="carousel-dot" aria-label="Slide 6"></button>
-            <button type="button" class="carousel-dot" aria-label="Slide 7"></button>
-          </div>
-        </div>
-
-        <div class="featured-content">
-          <span class="pill-badge">Featured Project</span>
-          <h3>Diabetes Risk Prediction Mobile App</h3>
-          <p class="project-summary">
-            Final year mobile application that estimates diabetes risk from health indicators using
-            Flutter, Firebase, and machine learning — designed for clarity and real-world usability.
-          </p>
-          <div class="tech-badges">
-            <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Machine Learning</span>
-          </div>
-          <div class="showcase-actions">
-            <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/final-year-peoject" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <button
-              class="btn btn-secondary gallery-btn"
-              type="button"
-              data-gallery-title="Diabetes Risk Prediction — Screenshots"
-              data-images="public/projects/diabetes/screen1.jpeg,public/projects/diabetes/screen2.jpeg,public/projects/diabetes/screen3.jpeg,public/projects/diabetes/screen4.jpeg,public/projects/diabetes/screen5.jpeg,public/projects/diabetes/screen6.jpeg,public/projects/diabetes/screen7.jpeg"
-            >View Screenshots</button>
-          </div>
-        </div>
-      </article>
-
-      <div class="showcase-grid">
-        <article class="showcase-card glass">
-          <div class="showcase-card-body">
-            <h3>AI Chatbot Mobile App</h3>
-            <p class="card-summary">Conversational Flutter app with API-powered responses and polished chat UI.</p>
-            <div class="tech-badges">
-              <span>Flutter</span><span>Dart</span><span>REST API</span><span>Mobile App</span>
-            </div>
-            <ul class="features-list">
-              <li>Guided chat interface with validation and clean mobile UX</li>
-              <li>Real-time API-powered responses with easy-to-read conversation flow</li>
-              <li>Secure session handling and response history</li>
-              <li>End-to-end cross-platform Flutter mobile architecture</li>
-            </ul>
-            <div class="showcase-actions">
-              <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/ChatGPT-Flutter-AIChatBot" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <button class="btn btn-secondary gallery-btn" type="button" data-gallery-title="AI Chatbot Mobile App" data-images="public/projects/chatbot/screen1.jpeg,public/projects/chatbot/screen2.jpeg,public/projects/chatbot/screen3.jpeg,public/projects/chatbot/screen4.jpeg">Screenshots</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="showcase-card glass">
-          <div class="showcase-card-body">
-            <h3>Jewelry E-Commerce Website</h3>
-            <p class="card-summary">Responsive product catalog and cart experience built with HTML, CSS, and JavaScript.</p>
-            <div class="tech-badges">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <div class="showcase-actions">
-              <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/jewellery" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <button class="btn btn-secondary gallery-btn" type="button" data-gallery-title="Jewelry E-Commerce Website" data-images="public/projects/jewelry/screen1.png,public/projects/jewelry/screen2.png,public/projects/jewelry/screen3.png">Screenshots</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="showcase-card glass showcase-card--github-only">
-          <div class="showcase-card-body">
-            <h3>Flutter Projects Collection</h3>
-            <p class="card-summary">
-              Collection of Flutter apps including AI chatbots, Firebase push notifications, maps, and more —
-              available on GitHub.
+      <main>
+        <section id="home" class="section resume-hero reveal hero-animate">
+          <p class="section-label">Hello there!</p>
+          <h2 class="hero-name">Hi, I'm Pavithra <span class="wave">👋</span></h2>
+          <p class="hero-tagline">Flutter Developer building mobile apps and cloud-powered solutions.</p>
+          <p class="animated-text" aria-live="polite"></p>
+          <div class="hero-about">
+            <p>
+              Information Technology graduate passionate about Flutter development, cloud computing, and software
+              engineering.
             </p>
-            <div class="tech-badges">
-              <span>Flutter</span><span>Dart</span><span>Firebase</span><span>REST API</span>
-            </div>
-            <div class="showcase-actions">
-              <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/flutter-projects" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <p>
+              I build responsive mobile applications, integrate cloud services, and create scalable solutions focused
+              on user experience.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-resume-link href="assets/Pavithra-Sugundaram-Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+          </div>
+        </section>
+
+        <section id="about" class="section reveal">
+          <p class="section-label">Who I am</p>
+          <h2 class="section-title">About Me</h2>
+          <div class="grid two">
+            <article class="card">
+              <h3>Professional Summary</h3>
+              <p>
+                Aspiring Software Developer with internship experience in networking and AWS cloud computing, plus
+                hands-on work in Flutter, Java, Python, Firebase, REST APIs, and modern software development practices.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Core Focus</h3>
+              <ul class="focus-list">
+                <li>Software Development</li>
+                <li>Mobile Application Development</li>
+                <li>Cloud Computing</li>
+                <li>Problem Solving</li>
+                <li>Continuous Learning</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="education" class="section reveal">
+          <p class="section-label">Academic background</p>
+          <h2 class="section-title">Education</h2>
+          <div class="timeline">
+            <article class="timeline-item card">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <div class="timeline-head">
+                  <div>
+                    <h3>B.Tech Information Technology (Honors)</h3>
+                    <p class="timeline-org">Government College of Engineering, Erode</p>
+                  </div>
+                  <span class="timeline-date">2026 (Expected)</span>
+                </div>
+                <p class="timeline-meta"><strong>CGPA:</strong> 8.3</p>
+                <p>Focused on software engineering, mobile development, cloud computing, and data structures.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="section reveal">
+          <p class="section-label">Work experience</p>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-intro">Industry exposure that complements my academic projects and cloud certifications.</p>
+          <div class="timeline">
+            <article class="timeline-item card experience-card">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <div class="timeline-head">
+                  <div>
+                    <h3>Networking &amp; Cloud Computing Intern</h3>
+                    <p class="timeline-org">Sharadha Academy</p>
+                  </div>
+                  <span class="timeline-date">July 2025</span>
+                </div>
+                <ul class="experience-list">
+                  <li>Worked on networking concepts including IP addressing, VLANs, routing, TCP/IP, and DNS fundamentals.</li>
+                  <li>Deployed and managed scalable cloud infrastructure using AWS services.</li>
+                  <li>Applied monitoring practices and cloud security best practices in real-world scenarios.</li>
+                </ul>
+                <div class="tech-badges">
+                  <span>AWS</span><span>Cloud Computing</span><span>Networking</span><span>Security</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+          <p class="section-label">What I know</p>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="skills-highlight card">
+            <h3>Core strengths</h3>
+            <div class="skill-bars">
+              <div class="skill-row">
+                <div class="skill-label"><span>Flutter &amp; Dart</span><span>90%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="90"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-label"><span>Python</span><span>85%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-label"><span>Java</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-label"><span>AWS Cloud</span><span>78%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="78"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-label"><span>Git &amp; GitHub</span><span>85%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+              </div>
             </div>
           </div>
-        </article>
-
-        <article class="showcase-card glass">
-          <div class="showcase-card-body">
-            <h3>AWS Amplify Cognito Authentication</h3>
-            <p class="card-summary">Secure authentication flow using AWS Amplify and Amazon Cognito for cloud-backed user sign-in.</p>
-            <div class="tech-badges">
-              <span>AWS</span><span>Amplify</span><span>Cognito</span><span>JavaScript</span>
-            </div>
-            <div class="showcase-actions">
-              <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/amplify-cognito" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <button class="btn btn-secondary gallery-btn" type="button" data-gallery-title="AWS Amplify Cognito Authentication" data-images="public/projects/amplify-cognito/screen1.jpg,public/projects/amplify-cognito/screen2.jpg,public/projects/amplify-cognito/screen3.jpg,public/projects/amplify-cognito/screen4.jpg,public/projects/amplify-cognito/screen5.jpg,public/projects/amplify-cognito/screen6.jpg">Screenshots</button>
-            </div>
+          <div class="grid three skills-grid">
+            <article class="card">
+              <h3>Programming</h3>
+              <ul><li>Java</li><li>Python</li><li>Dart</li><li>SQL</li></ul>
+            </article>
+            <article class="card">
+              <h3>Mobile</h3>
+              <ul><li>Flutter</li><li>Firebase</li><li>REST APIs</li><li>State Management</li></ul>
+            </article>
+            <article class="card">
+              <h3>Cloud &amp; DevOps</h3>
+              <ul><li>AWS</li><li>Terraform</li><li>Docker</li><li>Linux</li></ul>
+            </article>
+            <article class="card">
+              <h3>Development</h3>
+              <ul><li>OOP</li><li>Data Structures</li><li>Algorithms</li><li>Problem Solving</li></ul>
+            </article>
+            <article class="card">
+              <h3>Databases</h3>
+              <ul><li>MySQL</li><li>MongoDB</li><li>Firebase Firestore</li></ul>
+            </article>
+            <article class="card">
+              <h3>Networking</h3>
+              <ul><li>TCP/IP</li><li>VLANs</li><li>Routing</li><li>DNS</li></ul>
+            </article>
           </div>
-        </article>
+        </section>
 
-        <article class="showcase-card glass">
-          <div class="showcase-card-body">
-            <h3>Spotify Infrastructure Automation</h3>
-            <p class="card-summary">AWS infrastructure automation using Terraform for scalable, repeatable cloud deployments.</p>
-            <div class="tech-badges">
-              <span>AWS</span><span>Terraform</span><span>IaC</span><span>DevOps</span>
+        <section id="projects" class="section reveal project-showcase">
+          <p class="section-label">My work</p>
+          <h2 class="section-title">Project Showcase</h2>
+          <p class="section-intro">
+            Production-style projects across mobile development, cloud engineering, and full-stack web.
+          </p>
+
+          <article class="featured-project card">
+            <div class="featured-visual">
+              <div class="phone-mockup">
+                <div class="phone-notch"></div>
+                <div class="carousel" data-carousel="diabetes" data-interval="3200">
+                  <img class="carousel-slide active" src="public/projects/diabetes/screen1.jpeg" alt="Diabetes app screen 1" />
+                  <img class="carousel-slide" src="public/projects/diabetes/screen2.jpeg" alt="Diabetes app screen 2" />
+                  <img class="carousel-slide" src="public/projects/diabetes/screen3.jpeg" alt="Diabetes app screen 3" />
+                  <img class="carousel-slide" src="public/projects/diabetes/screen4.jpeg" alt="Diabetes app screen 4" />
+                  <img class="carousel-slide" src="public/projects/diabetes/screen5.jpeg" alt="Diabetes app screen 5" />
+                  <img class="carousel-slide" src="public/projects/diabetes/screen6.jpeg" alt="Diabetes app screen 6" />
+                  <img class="carousel-slide" src="public/projects/diabetes/screen7.jpeg" alt="Diabetes app screen 7" />
+                </div>
+              </div>
+              <div class="carousel-dots" data-carousel-dots="diabetes">
+                <button type="button" class="carousel-dot active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel-dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel-dot" aria-label="Slide 3"></button>
+                <button type="button" class="carousel-dot" aria-label="Slide 4"></button>
+                <button type="button" class="carousel-dot" aria-label="Slide 5"></button>
+                <button type="button" class="carousel-dot" aria-label="Slide 6"></button>
+                <button type="button" class="carousel-dot" aria-label="Slide 7"></button>
+              </div>
             </div>
-            <div class="showcase-actions">
-              <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/manage_spotify" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <button class="btn btn-secondary gallery-btn" type="button" data-gallery-title="Spotify Infrastructure Automation" data-images="public/projects/spotify/screen1.png,public/projects/spotify/screen2.png,public/projects/spotify/screen3.png,public/projects/spotify/screen4.png,public/projects/spotify/screen5.png,public/projects/spotify/screen6.png">Screenshots</button>
+            <div class="featured-content">
+              <span class="pill-badge">Featured Project</span>
+              <h3>Diabetes Risk Prediction Mobile App</h3>
+              <p class="project-summary">
+                Final year mobile application that estimates diabetes risk from health indicators using Flutter,
+                Firebase, and machine learning.
+              </p>
+              <div class="tech-badges">
+                <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Machine Learning</span>
+              </div>
+              <div class="showcase-actions">
+                <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/final-year-peoject" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <button
+                  class="btn btn-secondary gallery-btn"
+                  type="button"
+                  data-gallery-title="Diabetes Risk Prediction — Screenshots"
+                  data-images="public/projects/diabetes/screen1.jpeg,public/projects/diabetes/screen2.jpeg,public/projects/diabetes/screen3.jpeg,public/projects/diabetes/screen4.jpeg,public/projects/diabetes/screen5.jpeg,public/projects/diabetes/screen6.jpeg,public/projects/diabetes/screen7.jpeg"
+                >View Screenshots</button>
+              </div>
             </div>
+          </article>
+
+          <div class="showcase-grid">
+            <article class="showcase-card card">
+              <div class="showcase-card-body">
+                <h3>AI Chatbot Mobile App</h3>
+                <p class="card-summary">Conversational Flutter app with API-powered responses and polished chat UI.</p>
+                <div class="tech-badges">
+                  <span>Flutter</span><span>Dart</span><span>REST API</span>
+                </div>
+                <div class="showcase-actions">
+                  <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/ChatGPT-Flutter-AIChatBot" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <button class="btn btn-secondary gallery-btn" type="button" data-gallery-title="AI Chatbot Mobile App" data-images="public/projects/chatbot/screen1.jpeg,public/projects/chatbot/screen2.jpeg,public/projects/chatbot/screen3.jpeg,public/projects/chatbot/screen4.jpeg">Screenshots</button>
+                </div>
+              </div>
+            </article>
+            <article class="showcase-card card">
+              <div class="showcase-card-body">
+                <h3>Jewelry E-Commerce Website</h3>
+                <p class="card-summary">Responsive product catalog and cart experience built with HTML, CSS, and JavaScript.</p>
+                <div class="tech-badges"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <div class="showcase-actions">
+                  <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/jewellery" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <button class="btn btn-secondary gallery-btn" type="button" data-gallery-title="Jewelry E-Commerce Website" data-images="public/projects/jewelry/screen1.png,public/projects/jewelry/screen2.png,public/projects/jewelry/screen3.png">Screenshots</button>
+                </div>
+              </div>
+            </article>
+            <article class="showcase-card card showcase-card--github-only">
+              <div class="showcase-card-body">
+                <h3>Flutter Projects Collection</h3>
+                <p class="card-summary">Collection of Flutter apps on GitHub — chatbots, Firebase, maps, and more.</p>
+                <div class="tech-badges"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+                <div class="showcase-actions">
+                  <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/flutter-projects" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="showcase-card card">
+              <div class="showcase-card-body">
+                <h3>AWS Amplify Cognito Authentication</h3>
+                <p class="card-summary">Secure authentication using AWS Amplify and Amazon Cognito.</p>
+                <div class="tech-badges"><span>AWS</span><span>Amplify</span><span>Cognito</span></div>
+                <div class="showcase-actions">
+                  <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/amplify-cognito" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <button class="btn btn-secondary gallery-btn" type="button" data-gallery-title="AWS Amplify Cognito Authentication" data-images="public/projects/amplify-cognito/screen1.jpg,public/projects/amplify-cognito/screen2.jpg,public/projects/amplify-cognito/screen3.jpg,public/projects/amplify-cognito/screen4.jpg,public/projects/amplify-cognito/screen5.jpg,public/projects/amplify-cognito/screen6.jpg">Screenshots</button>
+                </div>
+              </div>
+            </article>
+            <article class="showcase-card card">
+              <div class="showcase-card-body">
+                <h3>Spotify Infrastructure Automation</h3>
+                <p class="card-summary">AWS infrastructure automation using Terraform for scalable cloud deployments.</p>
+                <div class="tech-badges"><span>AWS</span><span>Terraform</span><span>IaC</span></div>
+                <div class="showcase-actions">
+                  <a class="btn btn-primary" href="https://github.com/PAVITHRASUGUNDARAM/manage_spotify" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <button class="btn btn-secondary gallery-btn" type="button" data-gallery-title="Spotify Infrastructure Automation" data-images="public/projects/spotify/screen1.png,public/projects/spotify/screen2.png,public/projects/spotify/screen3.png,public/projects/spotify/screen4.png,public/projects/spotify/screen5.png,public/projects/spotify/screen6.png">Screenshots</button>
+                </div>
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
-    </section>
+        </section>
 
-    <section id="career-goal" class="section reveal">
-      <h2>Career Goal</h2>
-      <article class="card glass">
-        <p>Seeking opportunities as:</p>
-        <ul class="checklist">
-          <li>Software Developer</li>
-          <li>Flutter Developer</li>
-          <li>Mobile Application Developer</li>
-          <li>AWS Cloud Engineer</li>
-          <li>Associate Software Engineer</li>
-        </ul>
-      </article>
-    </section>
+        <section id="career-goal" class="section reveal">
+          <p class="section-label">Goals</p>
+          <h2 class="section-title">Career Goal</h2>
+          <article class="card">
+            <p>Seeking opportunities as:</p>
+            <ul class="checklist">
+              <li>Software Developer</li>
+              <li>Flutter Developer</li>
+              <li>Mobile Application Developer</li>
+              <li>AWS Cloud Engineer</li>
+              <li>Associate Software Engineer</li>
+            </ul>
+          </article>
+        </section>
 
-    <section id="certifications" class="section reveal">
-      <h2>Certifications</h2>
-      <p class="section-intro">
-        Verified certificates from my
-        <a href="https://github.com/PAVITHRASUGUNDARAM/my_certificates" target="_blank" rel="noopener noreferrer">my_certificates</a>
-        repository on GitHub.
-      </p>
-      <div class="grid three cert-grid">
-        <article class="card glass cert-card">
-          <h3>AWS Geeks</h3>
-          <p>AWS cloud fundamentals and hands-on cloud learning.</p>
-          <a
-            class="btn btn-secondary"
-            href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/aws-geeks.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >View Certificate</a>
-        </article>
-        <article class="card glass cert-card">
-          <h3>AWS Training</h3>
-          <p>Cloud services, architecture concepts, and AWS ecosystem basics.</p>
-          <a
-            class="btn btn-secondary"
-            href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/pavithra_aws1.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >View Certificate</a>
-        </article>
-        <article class="card glass cert-card">
-          <h3>Ethical Hacking</h3>
-          <p>Security fundamentals, ethical hacking principles, and cyber awareness.</p>
-          <a
-            class="btn btn-secondary"
-            href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/Ethical_Hacking.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >View Certificate</a>
-        </article>
-        <article class="card glass cert-card">
-          <h3>Networking Basics</h3>
-          <p>Core networking concepts, protocols, and connectivity fundamentals.</p>
-          <a
-            class="btn btn-secondary"
-            href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/Networking_Basics_certificate.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >View Certificate</a>
-        </article>
-        <article class="card glass cert-card">
-          <h3>Privacy &amp; Security in Social Media</h3>
-          <p>Online privacy practices and secure social media usage.</p>
-          <a
-            class="btn btn-secondary"
-            href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/Privacy_and_Security_in_Online_Social_Media.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >View Certificate</a>
-        </article>
-      </div>
-    </section>
+        <section id="certifications" class="section reveal">
+          <p class="section-label">Credentials</p>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-intro">
+            Verified certificates from my
+            <a href="https://github.com/PAVITHRASUGUNDARAM/my_certificates" target="_blank" rel="noopener noreferrer">my_certificates</a>
+            repository on GitHub.
+          </p>
+          <div class="grid three cert-grid">
+            <article class="card cert-card">
+              <h3>AWS Geeks</h3>
+              <p>AWS cloud fundamentals and hands-on cloud learning.</p>
+              <a class="btn btn-secondary" href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/aws-geeks.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </article>
+            <article class="card cert-card">
+              <h3>AWS Training</h3>
+              <p>Cloud services, architecture concepts, and AWS ecosystem basics.</p>
+              <a class="btn btn-secondary" href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/pavithra_aws1.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </article>
+            <article class="card cert-card">
+              <h3>Ethical Hacking</h3>
+              <p>Security fundamentals and cyber awareness.</p>
+              <a class="btn btn-secondary" href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/Ethical_Hacking.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </article>
+            <article class="card cert-card">
+              <h3>Networking Basics</h3>
+              <p>Core networking concepts, protocols, and connectivity.</p>
+              <a class="btn btn-secondary" href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/Networking_Basics_certificate.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </article>
+            <article class="card cert-card">
+              <h3>Privacy &amp; Security</h3>
+              <p>Online privacy and secure social media usage.</p>
+              <a class="btn btn-secondary" href="https://github.com/PAVITHRASUGUNDARAM/my_certificates/blob/main/Privacy_and_Security_in_Online_Social_Media.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </article>
+          </div>
+        </section>
 
-    <section id="contact" class="section reveal">
-      <h2>Contact</h2>
-      <div class="grid two">
-        <article class="card glass">
-          <h3>Get In Touch</h3>
-          <p><strong>Email:</strong> <a href="mailto:pavisugu1926@gmail.com">pavisugu1926@gmail.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pavithra-sugundaram/" target="_blank" rel="noopener noreferrer">linkedin.com/in/pavithra-sugundaram</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/PAVITHRASUGUNDARAM" target="_blank" rel="noopener noreferrer">github.com/PAVITHRASUGUNDARAM</a></p>
-          <a class="btn btn-primary" data-resume-link href="assets/Pavithra-Sugundaram-Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
-        </article>
-        <form class="card glass contact-form">
-          <h3>Contact Form</h3>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required />
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="your@email.com" required />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Let's build something great." required></textarea>
-          <button class="btn btn-secondary" type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+        <section id="contact" class="section reveal">
+          <p class="section-label">Let's connect</p>
+          <h2 class="section-title">Contact</h2>
+          <div class="grid two">
+            <article class="card">
+              <h3>Get In Touch</h3>
+              <p><strong>Email:</strong> <a href="mailto:pavisugu1926@gmail.com">pavisugu1926@gmail.com</a></p>
+              <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pavithra-sugundaram/" target="_blank" rel="noopener noreferrer">linkedin.com/in/pavithra-sugundaram</a></p>
+              <p><strong>GitHub:</strong> <a href="https://github.com/PAVITHRASUGUNDARAM" target="_blank" rel="noopener noreferrer">github.com/PAVITHRASUGUNDARAM</a></p>
+              <a class="btn btn-primary" data-resume-link href="assets/Pavithra-Sugundaram-Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            </article>
+            <form class="card contact-form">
+              <h3>Contact Form</h3>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="your@email.com" required />
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Let's build something great." required></textarea>
+              <button class="btn btn-secondary" type="submit">Send Message</button>
+            </form>
+          </div>
+        </section>
+      </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Pavithra Sugundaram. Crafted for recruiters and hiring teams.</p>
-  </footer>
+      <footer class="footer">
+        <p>© <span id="year"></span> Pavithra Sugundaram. Built for recruiters and hiring teams.</p>
+      </footer>
+    </div>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" hidden></div>
 
   <dialog id="galleryModal" class="gallery-modal">
-    <article class="gallery-content glass">
+    <article class="gallery-content card">
       <div class="gallery-head">
         <h3 id="galleryTitle">Project Gallery</h3>
         <button id="closeGallery" type="button" class="theme-toggle" aria-label="Close gallery">✕</button>

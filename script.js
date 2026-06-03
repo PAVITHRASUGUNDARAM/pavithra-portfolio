@@ -51,21 +51,54 @@ function typeAnimation() {
 }
 
 function applyTheme(theme) {
-  document.body.classList.toggle("light", theme === "light");
+  document.body.classList.toggle("theme-dark", theme === "dark");
   if (themeToggle) {
-    themeToggle.textContent = theme === "light" ? "🌑" : "🌙";
+    themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
   }
 }
 
 const savedTheme = localStorage.getItem("theme");
-applyTheme(savedTheme || "dark");
+applyTheme(savedTheme === "dark" ? "dark" : "light");
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
-    const nextTheme = document.body.classList.contains("light") ? "dark" : "light";
+    const nextTheme = document.body.classList.contains("theme-dark") ? "light" : "dark";
     localStorage.setItem("theme", nextTheme);
     applyTheme(nextTheme);
   });
+}
+
+function initSkillBars() {
+  const fills = document.querySelectorAll(".skill-fill");
+
+  const animateBar = (bar) => {
+    const level = Math.min(100, Math.max(0, Number(bar.dataset.level) || 0));
+    bar.style.width = `${level}%`;
+    bar.classList.add("animated");
+  };
+
+  if (!fills.length) {
+    return;
+  }
+
+  if (!("IntersectionObserver" in window)) {
+    fills.forEach(animateBar);
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateBar(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.25 }
+  );
+
+  fills.forEach((bar) => observer.observe(bar));
 }
 
 if (yearEl) {
@@ -331,23 +364,53 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-if (menuToggle && navMenu) {
-  menuToggle.addEventListener("click", () => {
-    const isOpen = navMenu.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-    menuToggle.textContent = isOpen ? "✕" : "☰";
-  });
+const sidebar = document.getElementById("sidebar");
+const sidebarOverlay = document.getElementById("sidebarOverlay");
 
+function closeSidebarMenu() {
+  sidebar?.classList.remove("open");
+  if (sidebarOverlay) {
+    sidebarOverlay.hidden = true;
+  }
+  if (menuToggle) {
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  }
+}
+
+function openSidebarMenu() {
+  sidebar?.classList.add("open");
+  if (sidebarOverlay) {
+    sidebarOverlay.hidden = false;
+  }
+  if (menuToggle) {
+    menuToggle.setAttribute("aria-expanded", "true");
+    menuToggle.textContent = "✕";
+  }
+}
+
+if (menuToggle && sidebar) {
+  menuToggle.addEventListener("click", () => {
+    if (sidebar.classList.contains("open")) {
+      closeSidebarMenu();
+    } else {
+      openSidebarMenu();
+    }
+  });
+}
+
+if (sidebarOverlay) {
+  sidebarOverlay.addEventListener("click", closeSidebarMenu);
+}
+
+if (navMenu) {
   navMenu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.textContent = "☰";
-    });
+    link.addEventListener("click", closeSidebarMenu);
   });
 }
 
 initRevealAnimations();
 initImageFallbacks();
 initFeaturedCarousels();
+initSkillBars();
 typeAnimation();
