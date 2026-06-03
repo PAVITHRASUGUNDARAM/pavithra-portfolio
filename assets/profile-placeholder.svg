@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-label="Professional profile placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c2a58" />
+      <stop offset="100%" stop-color="#293f82" />
+    </linearGradient>
+  </defs>
+  <rect width="420" height="420" rx="32" fill="url(#bg)" />
+  <circle cx="210" cy="160" r="70" fill="#d2defe" />
+  <path d="M96 336c16-62 60-94 114-94s98 32 114 94" fill="#d2defe" />
+  <text x="210" y="389" text-anchor="middle" font-size="24" fill="#67d5ff" font-family="Inter, Arial, sans-serif">Pavithra Sugundaram</text>
+</svg>

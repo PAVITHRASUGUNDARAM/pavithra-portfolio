@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Architecture diagram placeholder">
+  <rect width="640" height="360" rx="18" fill="#0f1736" />
+  <rect x="44" y="134" width="150" height="84" rx="14" fill="#1f2c5b" />
+  <rect x="245" y="56" width="150" height="84" rx="14" fill="#24366f" />
+  <rect x="245" y="220" width="150" height="84" rx="14" fill="#24366f" />
+  <rect x="446" y="134" width="150" height="84" rx="14" fill="#1f2c5b" />
+  <path d="M194 176h51m150 0h51M320 140v78" stroke="#67d5ff" stroke-width="5" stroke-linecap="round" />
+  <text x="119" y="182" text-anchor="middle" fill="#dce6ff" font-size="16" font-family="Inter, Arial, sans-serif">Client App</text>
+  <text x="320" y="104" text-anchor="middle" fill="#dce6ff" font-size="16" font-family="Inter, Arial, sans-serif">API Layer</text>
+  <text x="320" y="268" text-anchor="middle" fill="#dce6ff" font-size="16" font-family="Inter, Arial, sans-serif">Database</text>
+  <text x="521" y="182" text-anchor="middle" fill="#dce6ff" font-size="16" font-family="Inter, Arial, sans-serif">Cloud Services</text>
+  <text x="320" y="334" text-anchor="middle" fill="#67d5ff" font-size="20" font-family="Inter, Arial, sans-serif">Architecture Diagram</text>
+</svg>

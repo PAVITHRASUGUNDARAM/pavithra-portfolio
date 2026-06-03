@@ -1,0 +1,34 @@
+HOW TO ADD A NEW PROJECT LATER
+================================
+
+1) SCREENSHOTS
+   Create a folder:
+     public/projects/your-project-name/
+   Add images:
+     screen1.jpeg  (or .jpg / .png)
+     screen2.jpeg
+     screen3.jpeg
+     ...
+
+2) HTML (index.html)
+   Scroll to:  <div class="showcase-grid">
+   Copy any existing <article class="showcase-card glass">...</article>
+   Paste below the last project card.
+
+   Update inside the new card:
+   - <h3>Your Project Title</h3>
+   - <p class="card-summary">One line description</p>
+   - <span>Tech</span> badges
+   - GitHub link (href="https://github.com/PAVITHRASUGUNDARAM/your-repo")
+   - Screenshots button data-images="public/projects/your-project-name/screen1.jpeg,..."
+
+   GitHub only (no screenshots):
+   Add class:  showcase-card--github-only
+   Only include the GitHub button (no Screenshots button).
+
+3) FEATURED PROJECT (optional)
+   To make a project the large featured one with phone carousel,
+   edit the <article class="featured-project glass"> section instead.
+
+4) REFRESH
+   Save files, then hard refresh browser: Ctrl + Shift + R
